@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A web app which provides the weather details by your browser location service 
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version :\
+    Ruby-3.0.0
 
-* System dependencies
+* System dependencies\
+   postgres \
 
-* Configuration
+* install dependencies \
+` bundle install `
 
-* Database creation
+* Database creation \
+	`rails db:migrate`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Run server \
+  `rails s`
