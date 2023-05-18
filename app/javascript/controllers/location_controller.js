@@ -32,11 +32,15 @@ export default class extends Controller {
       document.querySelector(".location_humidity").innerHTML = `Humidity : ${data['humidity']}%`
       document.querySelector(".location_cloud").innerHTML = `cloud : ${data['cloud']} oktas`
       document.querySelector("#search").value = data['name']
+      if(document.querySelector("#weather_details").classList.contains("hidden")) {
+        document.querySelector("#weather_details").classList.remove("hidden")
+      }
     })
   }
   
   error(err) {
     console.warn(`ERROR(${err.code}): ${err.message}`);
+    alert("please enable your location services");
   }
 
   search(e){
