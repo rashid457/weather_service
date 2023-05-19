@@ -1,21 +1,21 @@
 <div class="bg-grey">
    <h2 class="text-center font-sans px-4 py-2 text-2xl"> Weather in your city</h2>
    <div class="font-sans text-black flex items-center justify-center bg-orange-600 px-4 py-2">
-      <%= form_with url: location_search_path, method: :get, class: "border overflow-hidden flex rounded-lg", data: { controller: 'location', action: 'location#search:prevent' } do |form| %>
-         <%= form.text_field :search, autocomplete: "off", placeholder: 'Search by city..', class: "px-4 py-2 focus:outline-none", data: { location_target: :search}  %>
+      <form class="border overflow-hidden flex rounded-lg" data-controller="location" data-action="location#search:prevent">
+         <input autocomplete="off" placeholder="Search by city.." class="px-4 py-2 focus:outline-none" data-location-target="search" type="text" name="search" id="search">
          <button class="flex items-center justify-center px-4 border-l focus:outline-none">
             <svg class="h-4 w-4 text-white-dark mr-3" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                <path d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
             </svg>
             <p class="font-medium text-white">Search</p>
          </button>
-      <% end %>
+      </form>
    </div> 
   <div data-controller="location">
   </div>
   <div id="weather_details" class="hidden">
       <%= render "weather" %>
-   </div>
+</div>
 </div>
 
 

@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/current.json?key=e9957191d442443595c55314231805&q=Tampa
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.weatherapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 May 2023 06:49:30 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-SG1-979
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - IN
+      Cache-Control:
+      - public, max-age=180
+      Cdn-Proxyver:
+      - '1.03'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - 05/22/2023 06:49:30
+      Cdn-Edgestorageid:
+      - '784'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 80632c18d885eae8ed4417ac0c2606f4
+      Cdn-Cache:
+      - EXPIRED
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Tampa","region":"Florida","country":"United States
+        of America","lat":27.95,"lon":-82.46,"tz_id":"America/New_York","localtime_epoch":1684738170,"localtime":"2023-05-22
+        2:49"},"current":{"last_updated_epoch":1684737900,"last_updated":"2023-05-22
+        02:45","temp_c":26.7,"temp_f":80.1,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":4.3,"wind_kph":6.8,"wind_degree":140,"wind_dir":"SE","pressure_mb":1013.0,"pressure_in":29.92,"precip_mm":3.8,"precip_in":0.15,"humidity":76,"cloud":0,"feelslike_c":29.5,"feelslike_f":85.1,"vis_km":16.0,"vis_miles":9.0,"uv":1.0,"gust_mph":6.7,"gust_kph":10.8}}'
+  recorded_at: Mon, 22 May 2023 06:49:30 GMT
+recorded_with: VCR 6.1.0

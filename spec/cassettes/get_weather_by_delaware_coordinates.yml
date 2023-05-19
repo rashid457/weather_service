@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/current.json?key=e9957191d442443595c55314231805&q=40.36,-82.99
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.weatherapi.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 22 May 2023 06:49:31 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-SG1-979
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - IN
+      Cache-Control:
+      - public, max-age=180
+      Cdn-Proxyver:
+      - '1.03'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - 05/22/2023 06:49:31
+      Cdn-Edgestorageid:
+      - '784'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - f73bda33fd949ef8dac8e70e86b632f3
+      Cdn-Cache:
+      - EXPIRED
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Delaware","region":"Ohio","country":"United States
+        of America","lat":40.36,"lon":-82.99,"tz_id":"America/New_York","localtime_epoch":1684738171,"localtime":"2023-05-22
+        2:49"},"current":{"last_updated_epoch":1684737900,"last_updated":"2023-05-22
+        02:45","temp_c":12.8,"temp_f":55.0,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":2.2,"wind_kph":3.6,"wind_degree":10,"wind_dir":"N","pressure_mb":1020.0,"pressure_in":30.13,"precip_mm":0.0,"precip_in":0.0,"humidity":74,"cloud":0,"feelslike_c":12.8,"feelslike_f":55.1,"vis_km":16.0,"vis_miles":9.0,"uv":1.0,"gust_mph":6.9,"gust_kph":11.2}}'
+  recorded_at: Mon, 22 May 2023 06:49:31 GMT
+recorded_with: VCR 6.1.0

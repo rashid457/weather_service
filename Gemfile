@@ -54,6 +54,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'dotenv-rails'
   gem 'byebug'
+  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -74,6 +75,8 @@ group :test do
   gem "webdrivers"
   gem "rspec-rails"
   gem "factory_bot_rails"
+  gem "vcr"
+  gem "webmock"
 end
 
 gem "tailwindcss-rails", "~> 2.0"

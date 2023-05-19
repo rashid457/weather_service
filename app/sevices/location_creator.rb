@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class LocationCreator < ApplicationService
   def initialize(search_param)
     @search_param = search_param
   end
 
   def call
-    response = RestClient.get "http://api.weatherapi.com/v1/current.json?key=#{ENV['WEATHER_API_KEY']}&q=#{@search_param}"
+    response = WeatherApiClient.get_data("current.json?q=#{@search_param}")
     response = JSON.parse(response)
     build_location(response)
   end
